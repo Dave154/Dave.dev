@@ -210,17 +210,13 @@ textarea{
 .inline-image{
 	width: 7rem;
 	height: 7rem;
-	background:url(IMG_9288.jpg)top center no-repeat;
+	background:url(./IMG_9288.jpg) no-repeat;
 	background-size: cover;
 	border-radius: 50%;
 	border-bottom-left-radius: 0;
 	margin: 0 1.5rem;
 }
-.dark-theme .has-sparkles::before,
-.dark-theme .has-sparkles::after{
-  	background:  var(--dark-color);
-	background-size: cover;
-}
+
 .inline-image.has-sparkles::before{
 	width: 1rem;
 	height: 1rem;
