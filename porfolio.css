@@ -210,14 +210,14 @@ textarea{
 .inline-image{
 	width: 7rem;
 	height: 7rem;
-	background:url(./IMG_9288.jpg) no-repeat;
-	background-size: cover;
 	border-radius: 50%;
 	border-bottom-left-radius: 0;
 	margin: 0 1.5rem;
+	overflow: hidden;
 }
 
 .inline-image.has-sparkles::before{
+	position: absolute;
 	width: 1rem;
 	height: 1rem;
 	top: -.5rem;
@@ -237,7 +237,6 @@ textarea{
 	max-width: 2rem;
 	height: 2vw;
 	max-height: 2rem;
-	background: url(DaveLogo.jpg) center no-repeat;
 }
 
 .dark-theme .has-sparkles-alt::after{
