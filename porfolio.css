@@ -218,7 +218,7 @@ textarea{
 }
 .dark-theme .has-sparkles::before,
 .dark-theme .has-sparkles::after{
-  	background: url(davelogo2.jpeg) center no-repeat;
+  	background:  var(--dark-color);
 	background-size: cover;
 }
 .inline-image.has-sparkles::before{
@@ -468,7 +468,7 @@ textarea{
 	border-radius: 50%;
 }
 .form-button.button-fill::before{
-	border-radius: 10px;
+	border-radius: 10px ;
 } 
 .button-fill:hover::before,
 .button-fill:focus::before{
