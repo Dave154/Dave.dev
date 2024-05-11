@@ -467,6 +467,9 @@ textarea{
 .large-button.button-fill::before{
 	border-radius: 50%;
 }
+.form-button.button-fill::before{
+	border-radius: 10px;
+} 
 .button-fill:hover::before,
 .button-fill:focus::before{
 	transform:	scale(1.0);
@@ -506,6 +509,7 @@ textarea{
 	padding: 1rem 2rem;
 	text-transform: uppercase;
 	margin: 0 auto;
+	border-radius: 10px;
 }
 .required-field{
 	font-size: 1rem;
