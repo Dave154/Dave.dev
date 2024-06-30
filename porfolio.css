@@ -9,6 +9,7 @@
 :root{
 	--light-color:#f3f3fe;
 	--dark-color:#1c1c1c;
+	--faded-bg:rgba(20, 20,20,.9);
 	--border-top-color:rgba(0,0,0,.1);
 	--link-hover-color:rgba(255,255,255,.2);
 	--title-font-family:'Playfair Display' , 'serif';
@@ -110,7 +111,7 @@ textarea{
 .logo{
 	font-family: var(--title-font-family);
 	font-size: 3rem;
-	font-weight: 600;
+	font-weight:700;
 }
 .logo span{
 	color:#e77e58;
@@ -212,7 +213,7 @@ textarea{
 	height: 7rem;
 	border-radius: 50%;
 	border-bottom-left-radius: 0;
-	margin: 0 1.5rem;
+	margin: 0 2.5rem;
 	overflow: hidden;
 }
 
@@ -510,6 +511,72 @@ textarea{
 	font-size: 1rem;
 	color: red;
 	transform: translateY(-.9rem);
+}
+.copy_mail{
+	position: relative;
+	cursor: pointer;
+}.mail{
+	text-decoration: underline;
+	
+}
+.copy_modal{
+	position: absolute;
+	top: -4rem;
+	left: 30%;
+	background: var(--dark-color);
+	color: var(--light-color);
+	padding:  0 10px;
+	border-radius: 5px;
+	opacity: 0;
+	transform: translateY(10px) scale(0);
+	transition: all .2s;
+}.copy_modal.active{
+	opacity: 1;
+	transform: translateY(0) scale(1);
+}
+.copy_modal:after{
+	content: '';
+	position: absolute;
+	border: 1rem solid transparent;
+	border-top-color: var(--dark-color);
+	bottom: -2rem;
+    left:30%;
+	z-index: -1;
+}
+
+/*MODAL*/
+.modal{
+	position: fixed;
+	inset: 0;
+	background:var(--faded-bg) ;
+	place-items:center;
+	opacity: 0;
+	transform: scale(0.1);
+	
+}
+.modal.active{
+	opacity: 1;
+	transform: scale(1);	
+}
+
+.modal-container{
+	background-color: var(--dark-color);
+	color: var(--light-color);
+	width: 80vw;
+	max-width: 	60rem;
+    padding: 20px;
+	border-radius: 20px;
+	place-items: center;
+	opacity: 0;
+	transform: translateY(100%);
+}
+.modal.active .modal-container{
+	opacity: 1;
+	transform: translateY(0);
+	transition: transform .5s ease;
+}
+.modal-container i{
+	font-size: clamp(10rem, 20vw, 40vw);
 }
 
 

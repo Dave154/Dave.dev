@@ -1,6 +1,13 @@
 // Toggle nav menu and icons
 const menuToggleButton = document.querySelector('.menu-toggle-button');
 const menu = document.querySelector('.menu');
+const form=document.querySelector('.contact-form')
+const name =document.querySelector('#name')
+const email =document.querySelector('#email')
+const message =document.querySelector('#message')
+const modal=document.querySelector('.modal')
+const mail =document.querySelector('.mail')
+const copyModal =document.querySelector('.copy_modal')
 
 const toggleMenu =()=>{
 	menu.classList.toggle('active');
@@ -34,7 +41,33 @@ const toggleTheme=()=>{
 	}
 	
 };
+// copy mail
+   
+   const copyFunc=()=>{
+   	copyModal.classList.add('active')
+   navigator.clipboard.writeText(mail.textContent)
+   setTimeout(()=>{
+   	console.log('hey')
+   	copyModal.classList.remove('active')
+   },2000)
+   }
+  mail.addEventListener('click',copyFunc)
 
+// FORM
+const handleForm =(e)=>{
+  e.preventDefault()
+  
+  console.log(name.value,email.value,message.value)
+ modal.classList.add('active')
+
+ setTimeout(()=>{
+ 	modal.classList.remove('active')
+ 	name.value=''
+   email.value=''
+    message.value=''
+ },3000)
+}
+form.addEventListener('submit',handleForm)
 //Back to top btn show after scroll
  const btT=document.querySelector('.scroll-top')
  window.addEventListener('scroll',()=>{
