@@ -56,7 +56,6 @@ const toggleTheme=()=>{
 // FORM
 const handleForm =(e)=>{
   e.preventDefault()
-  
   console.log(name.value,email.value,message.value)
  modal.classList.add('active')
 
