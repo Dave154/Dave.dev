@@ -56,15 +56,22 @@ const toggleTheme=()=>{
 // FORM
 const handleForm =(e)=>{
   e.preventDefault()
-  console.log(name.value,email.value,message.value)
+ console.log(e)
  modal.classList.add('active')
+
+
 
  setTimeout(()=>{
  	modal.classList.remove('active')
- 	name.value=''
+ 	
+ },3000)
+ setTimeout(()=>{
+ 		window.open(`https://api.whatsapp.com/send/?phone=2348067419570&text=${name.value} ${' '} ${email.value}  ${' '} ${message.value}` )
+ 		console.log('stuff')
+ 		name.value=''
    email.value=''
     message.value=''
- },3000)
+ },4000)
 }
 form.addEventListener('submit',handleForm)
 //Back to top btn show after scroll

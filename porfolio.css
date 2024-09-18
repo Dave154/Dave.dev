@@ -501,6 +501,9 @@ textarea{
 .input input:focus + .input-label{
 	transform: translateY(-2.5rem);
 }
+#name{
+	text-transform: capitalize;
+}
 .form-button{
 	padding: 1rem 2rem;
 	text-transform: uppercase;
