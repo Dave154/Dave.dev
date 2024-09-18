@@ -209,11 +209,11 @@ textarea{
 }
 
 .inline-image{
-	width: 7rem;
-	height: 7rem;
+	width: clamp(4rem,8vw,7rem);
+	aspect-ratio: 1/1;
 	border-radius: 50%;
 	border-bottom-left-radius: 0;
-	margin: 0 2.5rem;
+	margin: 0 1rem;
 	overflow: hidden;
 }
 
@@ -661,6 +661,7 @@ textarea{
 	.inline-image{
 		width: 15rem;
 		height: 15rem;
+		margin-inline: 2.5rem;
 	}
 
 	.inline-image.has-sparkles::before{
