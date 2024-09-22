@@ -72,7 +72,7 @@ const handleForm =(e)=>{
  		name.value=''
    email.value=''
     message.value=''
- },4000)
+ },1000)
 }
 form.addEventListener('submit',handleForm)
 //Back to top btn show after scroll
