@@ -711,6 +711,10 @@ textarea{
 		grid-row: 22/span 10;
 	}
 	.porfolio-card-6{
+		grid-column: 1/6;
+		grid-row: 32/span 10;
+	}
+	.porfolio-card-7{
 		grid-column: 1/4;
 		grid-row: 21/span 10;
 	}

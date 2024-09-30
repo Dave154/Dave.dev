@@ -66,9 +66,7 @@ const handleForm =(e)=>{
  	
  },3000)
  setTimeout(()=>{
-
- 		window.open(`https://api.whatsapp.com/send/?phone=2348067419570&text=${name.value}${'%0a'}${email.value}${'%0a'}${message.value}` )
- 		console.log('stuff')
+ 		window.open(`https://api.whatsapp.com/send/?phone=2348067419570&text=${name.value}${'%0a'}${email.value}${'%0a'}${message.value}`)
  		name.value=''
    email.value=''
     message.value=''
